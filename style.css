@@ -6,8 +6,18 @@ html, body {
 }
 
 body {
-	background: #000000;
+	background-color: rgb(92, 18, 0);
+	background-image: url("images/brick-background.png");
+	background-repeat: repeat;
+	background-position: top left;
 	color: white;
+}
+
+/* Keep the border inside Construct's canvas bounds so it does not affect
+   viewport sizing, pointer coordinates, or the matching HTML overlay. */
+body > canvas {
+	outline: 5px solid rgb(92, 18, 0);
+	outline-offset: -5px;
 }
 
 input[type="file"] {
